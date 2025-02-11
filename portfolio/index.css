@@ -1,0 +1,124 @@
+.main > header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: auto;
+  min-width: 1200px;
+  height: auto;
+  flex-direction: column;
+  font-size: 1.125rem;
+  color: #fff;
+  z-index: 7;
+  background: #181928;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.25);
+}
+
+.main > header > .top {
+  position: relative;
+  width: 100%;
+  height: 56px;
+  border-bottom: 1px solid var(#272b3a);
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: initial;
+}
+
+.main > header > .top > .inner > .btn-wrap {
+  flex: 1 1;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  justify-content: flex-end;
+  gap: 16px;
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+
+.main > header > .top > .inner > .btn-wrap {
+  flex: 1 1;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  justify-content: flex-end;
+  gap: 16px;
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+
+.main > header > .top > .inner > .btn-wrap > button {
+  background: transparent;
+  padding: 0;
+  border-radius: 2px;
+  border: 0;
+}
+
+.main > header > .top > .inner > .btn-wrap > button,
+button[class*="btn"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Pretendard, sans-serif;
+  font-weight: 600;
+  color: var(#fff);
+}
+
+.main > header > .top > .inner > .btn-wrap > button[class*="-txt"] {
+  height: auto !important;
+  width: auto !important;
+  font-weight: 500;
+  font-size: 0.938rem;
+}
+
+.main > header > .top > .inner > .btn-wrap > button[class*="btn"] {
+  font-style: normal;
+  gap: 2px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Pretendard, sans-serif;
+  font-weight: 600;
+  color: var(--gray-00);
+}
+
+.main
+  > .bottom
+  > .bottom1
+  > header
+  > .top
+  > .inner
+  > .btn-wrap
+  > button[class*="-line"].point-02 {
+  border-color: var(--point-02);
+  color: var(#f99a0e);
+}
+
+.main > header > .bottom > .inner > header > nav > ul {
+  display: flex;
+  gap: 10px;
+}
+
+.main > header > .bottom > .inner > header > nav > ul > li {
+  font-weight: 600;
+  padding: 14px 16px;
+  border-radius: 20px;
+}
+
+.main > header > .bottom > .inner > header > h1 {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 90px;
+  height: 105px;
+  transform: translate(-50%);
+  background: url(https://www.doosanbears.com/images/logo.svg) no-repeat 50%;
+  background-size: 100%;
+  z-index: 3;
+}
+
+.main > header > .bottom > .inner > header > nav > ul > li:hover {
+  background-color: #efefef;
+}
