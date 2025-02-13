@@ -50,7 +50,7 @@ button[class*="btn"] {
   justify-content: center;
   font-family: Pretendard, sans-serif;
   font-weight: 600;
-  color: var(#fff);
+  color: #fff;
 }
 
 .main > header > .top > .inner > .btn-wrap > button[class*="-txt"] {
@@ -84,7 +84,7 @@ button[class*="btn"] {
   z-index: 3;
 }
 
-.main > header > .top > .inner > .btn-wrap> button[class*="-line"].point-02 {
+.main > header > .top > .inner > .btn-wrap > button[class*="-line"].point-02 {
   border-color: var(--point-02);
   color: var(#f99a0e);
 }
@@ -99,7 +99,7 @@ button[class*="btn"] {
   padding: 14px 16px;
   border-radius: 20px;
   width: 100%;
-  height: 100%;  
+  height: 100%;
 }
 
 .main > header > .bottom > .inner > nav > ul > li > button {
@@ -110,10 +110,20 @@ button[class*="btn"] {
   height: 50px;
   font-size: 1.125rem;
   font-weight: 600;
-  color: var(#66687b);
+  color: #66687b;
 }
 
-.hero {
+.main > .main-visual {
+  position: relative;
+  padding: 70px 0;
+}
+
+.main-visual > .hide {
+  position: relative;
+  padding: 70px 0;
+}
+
+.main-visual > .hero {
   width: 100vw;
   height: 100vh;
   background-image: url("https://www.doosanbears.com/_next/image?url=https%3A%2F%2Fd3uesnxiude69b.cloudfront.net%2Fimgbbs%2F202405%2Faee21a65-4e2e-47b2-90c4-111a63586d77.JPG&w=1920&q=75");
@@ -121,6 +131,117 @@ button[class*="btn"] {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.main-game {
+  position: relative;
+  padding: 70px 0;
+  background-color: #181928;
+}
+
+.main-game > .title-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0 auto 60px;
+  width: 100%;
+  max-width: 1200px;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+.main-game > .title-wrap > h1 {
+  font-size: 2rem;
+  text-align: left;
+  word-break: break-all;
+  word-wrap: break-word;
+  display: block;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+}
+
+.main-game > .title-wrap > button {
+  font-size: 2rem;
+  color: #858e96;
+  gap: 0;
+  position: absolute;
+  right: 0;
+  background: transparent;
+  padding: 0;
+  border-radius: 2px;
+  border: 0;
+}
+
+.main-game > .title-wrap > button > i {
+  width: 30px;
+  height: 30px;
+}
+
+.main-game > .title-wrap > button > button[class*="-txt"] {
+  height: auto !important;
+  width: auto !important;
+  font-weight: 500;
+  font-size: 0.938rem;
+}
+
+.main-game > .title-wrap > button > button[class*="btn"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Pretendard, sans-serif;
+  font-weight: 600;
+  color: var(#fff);
+  font-style: normal;
+  gap: 2px;
+  border-radius: 4px;
+}
+
+.main-game > .inner {
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  max-width: 1200px;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+.main-game > .inner > .game-wrap {
+  gap: 40px;
+  display: flex;
+  flex-direction: column;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+.main-game > .inner > .game-wrap > .data-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+.main-game > .inner > .game-wrap > .data-area > button {
+  width: 50px;
+  height: 50px;
+  border-color: var(--gray-50);
+  background-size: 33px !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+}
+
+.main-game > .inner > .game-wrap > .data-area > p {
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+@media screen and (max-width: 480px) {
+  .motto > .contents {
+    max-width: 480px;
+  }
 }
 
 .main > footer {
@@ -171,7 +292,7 @@ button[class*="btn"] {
   padding: 14px 16px;
   border-radius: 20px;
   width: 100%;
-  height: 100%;  
+  height: 100%;
 }
 
 .main > footer > .top > .inner > .link-wrap > ul > li > a {
