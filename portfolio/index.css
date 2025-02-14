@@ -24,6 +24,34 @@
   border-bottom-color: initial;
 }
 
+.main > header > .top > .inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main > header > .top > .inner > .title-wrap {
+  justify-content: flex-end;
+  flex: 1 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.main > header > .top > .inner > .title-wrap > h1 {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 90px;
+  height: 105px;
+  transform: translate(-50%);
+  background: url(https://www.doosanbears.com/images/logo.svg) no-repeat 50%;
+  background-size: 100%;
+  z-index: 3;
+}
+
 .main > header > .top > .inner > .btn-wrap {
   flex: 1 1;
   flex-grow: 1;
@@ -31,9 +59,11 @@
   flex-basis: 0%;
   justify-content: flex-end;
   gap: 16px;
+  border-radius: 0;
   width: auto;
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .main > header > .top > .inner > .btn-wrap > button {
@@ -60,44 +90,34 @@ button[class*="btn"] {
   font-size: 0.938rem;
 }
 
-.main > header > .top > .inner > .btn-wrap > button[class*="btn"] {
-  font-style: normal;
-  gap: 2px;
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: Pretendard, sans-serif;
-  font-weight: 600;
-  color: var(--gray-00);
+.main > header > .top > .inner > .btn-wrap > button[class*="btn-txt point-02"] {
+  color: #f99a0e;
 }
 
-.main > header > .top > .inner > .title-wrap > h1 {
-  position: absolute;
-  left: 50%;
-  top: 0;
-  width: 90px;
-  height: 105px;
-  transform: translate(-50%);
-  background: url(https://www.doosanbears.com/images/logo.svg) no-repeat 50%;
-  background-size: 100%;
-  z-index: 3;
+.main > header > .top > .inner > .btn-wrap > button[class*="btn-txt point-01"] {
+  color: #01c7f7;
 }
 
-.main > header > .top > .inner > .btn-wrap > button[class*="-line"].point-02 {
-  border-color: var(--point-02);
-  color: var(#f99a0e);
+.main > header > .bottom {
+  width: 100%;
+  position: relative;
+}
+
+.main > header > .bottom > .inner {
+  width: 100%;
+  height: 100%;
+}
+
+.main > header > .bottom > .inner > nav {
+  height: 100%;
 }
 
 .main > header > .bottom > .inner > nav > ul {
   display: flex;
-  gap: 10px;
+  justify-content: space-around;
 }
 
 .main > header > .bottom > .inner > nav > ul > li {
-  font-weight: 600;
-  padding: 14px 16px;
-  border-radius: 20px;
   width: 100%;
   height: 100%;
 }
@@ -151,6 +171,7 @@ button[class*="btn"] {
 }
 
 .main-game > .title-wrap > h1 {
+  color: #fff;
   font-size: 2rem;
   text-align: left;
   word-break: break-all;
@@ -220,6 +241,118 @@ button[class*="btn"] {
   justify-content: space-between;
   word-break: break-all;
   word-wrap: break-word;
+}
+
+.main-game > .inner > .game-wrap > .swiper {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.main-game > .inner > .game-wrap > .swiper > .swiper-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  box-sizing: content-box;
+}
+
+.main-game > .inner > .game-wrap > .swiper > .swiper-wrap > .swiper-slide1 {
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+  display: block;
+}
+
+.main-game
+  > .inner
+  > .game-wrap
+  > .swiper
+  > .swiper-wrap
+  > .swiper-slide1
+  > .game-box {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  color: var(#fff);
+}
+
+.main-game
+  > .inner
+  > .game-wrap
+  > .swiper
+  > .swiper-wrap
+  > .swiper-slide1
+  > .game-box
+  > li {
+  position: relative;
+  width: 282px;
+  height: 260px;
+  border: 0;
+  border-radius: 0;
+  box-shadow: 0 8px 30px 0 rgba(43, 43, 67, 0.4);
+  flex-shrink: 0;
+  width: 282px;
+  height: 260px;
+  background: #272b3a;
+  border: 1px solid #3a4152;
+  border-radius: 4px;
+}
+
+.main-game
+  > .inner
+  > .game-wrap
+  > .swiper
+  > .swiper-wrap
+  > .swiper-slide1
+  > .game-box
+  > li
+  > .page_top {
+  padding: 14px 20px 13px;
+  border-color: var(#3a4152);
+}
+
+.main-game
+  > .inner
+  > .game-wrap
+  > .swiper
+  > .swiper-wrap
+  > .swiper-slide1
+  > .game-box
+  > li
+  > .page_top
+  > p {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.main-game
+  > .inner
+  > .game-wrap
+  > .swiper
+  > .swiper-wrap
+  > .swiper-slide1
+  > .game-box
+  > li
+  > .page_bottom {
+  justify-content: center;
+  padding: 24px 20px;
+  height: calc(100% - 48px);
 }
 
 .main-game > .inner > .game-wrap > .data-area > button {
